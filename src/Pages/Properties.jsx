@@ -11,7 +11,7 @@ const Properties = forwardRef((props,ref) => {
             <h1 className="text-4xl font-bold text-blue-500">Properties</h1>
             <p className='text-slate-500 font-sm mb-2'> We offer a diverse selection of quality properties along the coast with ready title deeds. </p>  
         </div>
-        <div className='flex flex-wrap *:space-x-3'>
+        <div className='flex flex-wrap mt-12 *:p-x-3'>
         {properties.map((property,index)=>{return (<div  className="  mx-auto container min-w-44 max-w-sm m-4 flex flex-col  bg-gray-100 rounded-md" key={index}>
             {/* {property.Title} */}
             <div className="relative  h-fit">
