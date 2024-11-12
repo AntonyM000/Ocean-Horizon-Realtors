@@ -8,19 +8,13 @@ import Footer from '../Pages/Footer';
 import Paradise from '../Pages/Paradise';
 
 const HomeLayout = () => {
-  const propertiesSectionRef = useRef(null);
 
-  const scrollToProperties = () => {
-    if (propertiesSectionRef.current) {
-      propertiesSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <div>
-      <Home scrollToProperties={scrollToProperties} />
+      <Home  />
       <Paradise />
-      <Properties ref={propertiesSectionRef} />
+      <Properties  />
       <Aboutus />
       <Whyus />
       <Faq />
